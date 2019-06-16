@@ -179,25 +179,30 @@ let textos = [
   {
     nome: 'eucariontes',
     titulo: 'Células Eucariontes',
-    texto: `<p>eucariontes aq</p>`,
+    texto: `<p>As células eucariontes são aquelas que apresentam um núcleo delimitado por um envoltório nuclear. Nesse tipo celular, o material genético não está espalhado pelo citoplasma, como nas células procariontes, mas, sim, restritos à região do núcleo.</p>
+    <p>As células eucariontes são mais complexas do que as células procariontes. Uma das principais características é a presença de um núcleo delimitado por envoltório nuclear, o qual protege as moléculas de DNA existentes nessa região. É no interior do núcleo que ocorre a duplicação do DNA e a síntese de RNA</p>`,
     add: ``,
   },
   {
     nome: 'procariontes',
     titulo: 'Células Procariontes',
-    texto: `<p>procariontes aq</p>`,
+    texto: `<p>As células procariontes  podem ser definidas, como as células que não possuem material genético delimitado por um envoltório nuclear. Isso quer dizer que seu material genético está disperso no citoplasma</p>
+    <p>A principal característica de uma célula procarionte é a ausência de um núcleo delimitado. Nessas células, observa-se apenas um local (nucleoide) contendo DNA circular (DNA cromossômico) não associado a proteínas histonas. Podem existir ainda pequenas moléculas de DNA livres no citoplasma, conhecidas como plasmídeos, que são capazes de se reproduzir independentemente do DNA cromossômico</p>
+    <p>Essas células destacam-se também pela ausência de organelas membranosas, como retículo endoplasmático e complexo golgiense. Nessas células são encontrados apenas ribossomos, organelas relacionadas com o processo de síntese proteica. Apesar de ser uma organela presente em células eucariontes e procariontes, nesses últimos, apresenta um menor tamanho</p>`,
     add: ``,
   },
   {
     nome: 'animais',
     titulo: 'Células Animais',
-    texto: `<p>animais aq</p>`,
+    texto: `<p><p>As células animais são células eucarióticas as quais são encontradas nos animais (reino animalia)</p>
+    <p>As células animais apresentam uma estrutura organizada. Elas possuem três partes básicas: a membrana plasmática, o citoplasma e o núcleo</p></p>`,
     add: ``,
   },
   {
     nome: 'vegetais',
     titulo: 'Células Vegetais',
-    texto: `<p>vegetais aq</p>`,
+    texto: `<p>As células vegetais formam os tecidos das plantas. São semelhantes às células animais, uma vez que possuem muitas organelas em comum, mas diferem delas por possuírem parede celular, cloroplastos e vacúolos, adequadas ao modo de vida das plantas</p>
+    `,
     add: ``,
   },
 ]
