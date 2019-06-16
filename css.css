@@ -115,10 +115,16 @@ main{
   align-items: center;
 }
 
+.displayCelula{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .fullscreen{
   width: 32px;
   position: absolute;
-  right: 0.5em;
+  left: 0.5em;
   bottom: 0.5em;
 }
 
@@ -129,12 +135,74 @@ main{
   border: 1px solid red;
   background: lightgray;
   position: relative;
+  margin-left: 5em;
+}
+
+.displayInformation{
+  position: relative;
+  height: 100%;
+  width: 40%;
+  padding: 1em;
+  box-sizing: border-box;
+  overflow: auto;
+  border: 1px solid black;
+}
+
+.ipic{
+  position: relative;
+  padding: 0.5em;
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 100%;
+  bottom: 0;
+  font-weight: bold;
+}
+
+.ipic:hover{
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.displayInformation img{
+  max-width: 80%;
 }
 
 .organela{
   position: absolute;
   width: 3.5em;
   top: 20%;
+}
+
+.citoplasma{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(100, 255, 100, 0.4);
+  border-radius: 50%;
+}
+
+.nucleo{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  border: 2px solid red;
+  background-color: rgba(100, 255, 100, 0.7);
+}
+
+.nucleo::after{
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 40%;
+  left: 30%;
+  border-radius: 50%;
+  background-color: rgba(10, 255, 40, 0.9);
+  border: 2px solid black;
 }
 
 .division1{
@@ -160,7 +228,7 @@ main{
   overflow: auto;
 }
 
-.division2 h1{
+.division2 h1, .displayInformation h1{
   font-size: 1.5em;
   box-shadow: 0px 3px 0px #000;
   margin-bottom: 0.4em;
@@ -175,7 +243,7 @@ main{
   margin-left: 2em;
 }
 
-.division2 p{
+.division2 p, .displayInformation p{
   margin-left: 1em;
   font-size: 1.2em;
 }

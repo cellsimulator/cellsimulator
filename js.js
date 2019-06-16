@@ -5,7 +5,7 @@ let footer = document.querySelector('footer')
 let header = document.querySelector('header')
 let celula = document.querySelector('.celula')
 let fullscreen = document.querySelectorAll('.fullscreen')
-let mainAtual = 2
+let mainAtual = 0
 mudaMain(mainAtual)
 
 let informations = document.querySelector('.informations')
@@ -14,6 +14,7 @@ let is = document.querySelectorAll('.i')
 let h2 = document.querySelectorAll('h2')
 
 let division2 = document.querySelector('.division2')
+let displayInformation = document.querySelectorAll('.displayInformation')
 let lis = document.querySelectorAll('.informations li')
 
 let menuLis = document.querySelectorAll('.menuUl > li')
@@ -149,10 +150,6 @@ let textos = [
 
 main[mainAtual].style.height = window.innerHeight - (header.offsetHeight + footer.offsetHeight) + 'px'
 
-let contents = [
-  `<p>Nome: Mitocôndria</p><p>Função: sla</p>`,
-]
-
 function criaOs(x){
   for(let i = 0; i < x; i++){
     celula.innerHTML += `<img src="imgs/mitocondria.png" class='organela hoverable' data-type=0>`
@@ -167,7 +164,7 @@ function criaOs(x){
 function posicionaOs(){
   os = document.querySelectorAll('.organela')
   for(let i = 0; i < os.length; i++){
-    os[i].style.width = (Math.random() * 0.6) + 0.4 + "em"
+    os[i].style.width = (Math.random() * 3) + 5 + "em"
     os[i].style.left = (Math.random() * 100) + "%"
     os[i].style.top = (Math.random() * 100) + "%"
   }
@@ -201,14 +198,19 @@ function findNSelect(n){
   let i = 0;
   for(let i = 0; i < lis.length; i++) lis[i].classList.remove('selected')
   for(;lis[i].innerHTML != n;i++);
-  console.log(i);
   let el = lis[i]
-  console.log(el);
   el.classList.add('selected')
   while(el.parentNode.classList[0] != 'informations'){
     el.parentNode.classList.remove('oculto')
     el = el.parentNode
   }
+}
+
+function find2(n){
+  for(let i = 0; i < textos.length; i++){
+    if(textos[i].titulo == n) return i;
+  }
+  return -1;
 }
 
 function find(n){
@@ -218,18 +220,31 @@ function find(n){
   return -1;
 }
 
-function mostraInformacao(x){
+function mostraInformacao(x, qual = 2){
   findNSelect(x)
   let i = find(x)
-  division2.innerHTML = '<h1>'+textos[i].titulo+'</h1>'+textos[i].texto+textos[i].add
+  if(qual == 2) division2.innerHTML = '<h1>'+textos[i].titulo+'</h1>'+textos[i].texto+textos[i].add
+  else displayInformation[mainAtual].innerHTML = '<h1>'+textos[i].titulo+'</h1>'+textos[i].texto+textos[i].add+'<button class=\'ipic\' data-x='+textos[i].titulo+'>Ir para Informações Completas</button>'
   let ls = document.querySelectorAll('.link')
+  if(qual == 1){
+    let ipic = document.querySelectorAll('.ipic')
+    for(let j = 0; j < ipic.length; j++){
+      ipic[j].addEventListener('click', () => {
+        mudaMain(2)
+        console.log(ipic[j].dataset.x);
+        console.log(find2(ipic[j].dataset.x));
+        findNSelect(textos[find2(ipic[j].dataset.x)].nome)
+        mostraInformacao(textos[find2(ipic[j].dataset.x)].nome, 2)
+      })
+    }
+  }
   for(let j = 0; j < ls.length; j++) ls[j].addEventListener('click', (e) => {
+    if(qual == 1) mudaMain(2)
     mostraInformacao(e.currentTarget.dataset.link)
   })
 }
 
 function hoverMessage(content){
-  console.log('opa');
   hm.classList.remove('oculto')
   hm.innerHTML = '<p>'+content+'</p>'
   addEventListener('mousemove', (e) => {
@@ -238,13 +253,14 @@ function hoverMessage(content){
   })
 }
 
-for(let i = 0; i < iContainers.length; i++) iContainers[i].addEventListener('click', (e) => {mostraInformacao(e.currentTarget.innerHTML);})
-for(let i = 0; i < is.length; i++) is[i].addEventListener('click', (e) => mostraInformacao(e.currentTarget.innerHTML))
+for(let i = 0; i < is.length; i++) is[i].addEventListener('click', (e) => mostraInformacao(e.currentTarget.innerHTML, 2))
 for(let i = 0; i < h2.length; i++) h2[i].addEventListener('click', (e) => e.currentTarget.nextSibling.nextSibling.classList.toggle('oculto'))
 for(let i = 0; i < fullscreen.length; i++) fullscreen[i].addEventListener('click', (e) => fullScreen(e));
 for(let i = 0; i < menuLis.length; i++) menuLis[i].addEventListener('click', () => mudaMain(i))
-for(let i = 0; i < iContainers.length; i++) iContainers[i].addEventListener('click', (e) => e.currentTarget.nextSibling.nextSibling.classList.toggle('oculto'))
+for(let i = 0; i < iContainers.length; i++) iContainers[i].addEventListener('click', (e) => {if(e.currentTarget.nextSibling.nextSibling.classList[0] == 'oculto' || e.currentTarget.nextSibling.nextSibling.classList[0] != 'oculto' && e.currentTarget.classList[1] == 'selected') e.currentTarget.nextSibling.nextSibling.classList.toggle('oculto')})
+for(let i = 0; i < iContainers.length; i++) iContainers[i].addEventListener('click', (e) => {mostraInformacao(e.currentTarget.innerHTML, 2);})
 for(let i = 0; i < os.length; i++){
-  os[i].addEventListener('mouseover', (e) => hoverMessage(contents[e.currentTarget.dataset.type]))
+  os[i].addEventListener('mouseover', (e) => hoverMessage(textos[find(e.currentTarget.dataset.name)].titulo))
   os[i].addEventListener('mouseout', () => hm.classList.add('oculto'))
+  os[i].addEventListener('click', (e) => mostraInformacao(e.currentTarget.dataset.name, 1))
 }
