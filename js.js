@@ -125,7 +125,7 @@ let textos = [
   {
     nome: 'Complexo golgiense',
     titulo: 'Complexo golgiense',
-    texto: `<p>O Complexo de Golgi, Aparelho de Golgi, ou ainda Complexo golgiense, é uma organela de <span class='link' data-link="eucarionte">células eucariontes</span>, composta de discos membranosos achatados e empilhados. Suas funções são modificar, armazenar e exportar proteínas sintetizadas no <span class='link' data-link="granuloso">retículo endoplasmático rugoso</span> e além disso, origina os <span class='link' data-link="lisossomo">lisossomos</span> e os acrossomos dos espermatozoides.</p><img src='imgs/golgi.jpg'><p>Na face cis da cisterna, as vesículas recebidas do <span class='link' data-link="granuloso">RER</span> contém proteínas (produzidas pelos <span class='link' data-link="ribossomo">ribossomos</span> associados ao retículo) que serão modificadas e dobradas. Algumas dessas proteínas são glicosiladas, ou seja, sofrem reação de adição de um açúcar no <span class='link' data-link="granuloso">RER</span>. Esse processo é completado no Complexo golgiense, caso contrário, essas proteínas podem se tornar inativas.</p><p>Na face trans, as proteínas são "empacotadas" em vesículas membranosas. Desse modo, são originadas muitas enzimas, bem como os <span class='link' data-link="lisossomo">lisossomos</span> primários e os <span class='link' data-link="peroxissomo">peroxissomos</span>.</p><p>Enquanto essas organelas ficam no <span class='link' data-link="Citoplasma">citoplasma</span> da célula, as proteínas são muitas vezes enviadas para fora dela.</p><p>Uma outra função do Complexo golgiense é a formação do acrossomo que se localiza na cabeça do espermatozoide. O acrossomo é o resultado da fusão de vários <span class='link' data-link="lisossomo">lisossomos</span> formando uma grande vesícula, que contem enzimas digestivas para auxiliar na perfuração da membrana do óvulo.</p>`,
+    texto: `<p>O Complexo de Golgi, Aparelho de Golgi, ou ainda Complexo golgiense, é uma organela de <span class='link' data-link="eucarionte">células eucariontes</span>, composta de discos membranosos achatados e empilhados. Suas funções são modificar, armazenar e exportar proteínas sintetizadas no <span class='link' data-link="granuloso">retículo endoplasmático rugoso</span> e, além disso, origina os <span class='link' data-link="lisossomo">lisossomos</span> e os acrossomos dos espermatozoides.</p><img src='imgs/golgi.jpg'><p>Na face cis da cisterna, as vesículas recebidas do <span class='link' data-link="granuloso">RER</span> contém proteínas (produzidas pelos <span class='link' data-link="ribossomo">ribossomos</span> associados ao retículo) que serão modificadas e dobradas. Algumas dessas proteínas são glicosiladas, ou seja, sofrem reação de adição de um açúcar no <span class='link' data-link="granuloso">RER</span>. Esse processo é completado no Complexo golgiense, caso contrário, essas proteínas podem se tornar inativas.</p><p>Na face trans, as proteínas são "empacotadas" em vesículas membranosas. Desse modo, são originadas muitas enzimas, bem como os <span class='link' data-link="lisossomo">lisossomos</span> primários e os <span class='link' data-link="peroxissomo">peroxissomos</span>.</p><p>Enquanto essas organelas ficam no <span class='link' data-link="Citoplasma">citoplasma</span> da célula, as proteínas são muitas vezes enviadas para fora dela.</p><p>Uma outra função do Complexo golgiense é a formação do acrossomo que se localiza na cabeça do espermatozoide. O acrossomo é o resultado da fusão de vários <span class='link' data-link="lisossomo">lisossomos</span> formando uma grande vesícula, que contem enzimas digestivas para auxiliar na perfuração da membrana do óvulo.</p>`,
     add: ``,
   },
   {
@@ -179,29 +179,29 @@ let textos = [
   {
     nome: 'Eucariontes',
     titulo: 'Células Eucariontes',
-    texto: `<p>As células eucariontes são aquelas que apresentam um núcleo delimitado por um envoltório nuclear. Nesse tipo celular, o material genético não está espalhado pelo citoplasma, como nas células procariontes, mas, sim, restritos à região do núcleo.</p>
-    <p>As células eucariontes são mais complexas do que as células procariontes. Uma das principais características é a presença de um núcleo delimitado por envoltório nuclear, o qual protege as moléculas de DNA existentes nessa região. É no interior do núcleo que ocorre a duplicação do DNA e a síntese de RNA</p>`,
+    texto: `<p>As células eucariontes são aquelas que apresentam um núcleo delimitado por um envoltório nuclear. Nesse tipo celular, o material genético não está espalhado pelo <span class='link' data-link="Citoplasma">citoplasma</span>, como nas <span class='link' data-link="procariontes">células procariontes</span>, mas, sim, restritos à região do núcleo.</p>
+    <p>As células eucariontes são mais complexas do que as <span class='link' data-link="procariontes">células procariontes</span>. Uma das principais características é a presença de um núcleo delimitado por envoltório nuclear, o qual protege as moléculas de DNA existentes nessa região. É no interior do núcleo que ocorre a duplicação do DNA e a síntese de RNA.</p>`,
     add: ``,
   },
   {
     nome: 'Procariontes',
     titulo: 'Células Procariontes',
-    texto: `<p>As células procariontes  podem ser definidas, como as células que não possuem material genético delimitado por um envoltório nuclear. Isso quer dizer que seu material genético está disperso no citoplasma</p>
-    <p>A principal característica de uma célula procarionte é a ausência de um núcleo delimitado. Nessas células, observa-se apenas um local (nucleoide) contendo DNA circular (DNA cromossômico) não associado a proteínas histonas. Podem existir ainda pequenas moléculas de DNA livres no citoplasma, conhecidas como plasmídeos, que são capazes de se reproduzir independentemente do DNA cromossômico</p>
-    <p>Essas células destacam-se também pela ausência de organelas membranosas, como retículo endoplasmático e complexo golgiense. Nessas células são encontrados apenas ribossomos, organelas relacionadas com o processo de síntese proteica. Apesar de ser uma organela presente em células eucariontes e procariontes, nesses últimos, apresenta um menor tamanho</p>`,
+    texto: `<p>As células procariontes  podem ser definidas como as células que não possuem material genético delimitado por um envoltório nuclear. Isso quer dizer que seu material genético está disperso no <span class='link' data-link="Citoplasma">citoplasma</span>.</p>
+    <p>A principal característica de uma célula procarionte é a ausência de um núcleo delimitado. Nessas células, observa-se apenas um local (nucleoide) contendo DNA circular (DNA cromossômico) não associado a proteínas histonas. Podem existir ainda pequenas moléculas de DNA livres no <span class='link' data-link="Citoplasma">citoplasma</span>, conhecidas como plasmídeos, que são capazes de se reproduzir independentemente do DNA cromossômico.</p>
+    <p>Essas células destacam-se também pela ausência de <span class='link' data-link="membranosas">organelas membranosas</span>, como <span class='link' data-link="retículo endoplasmático">retículo endoplasmático</span> e <span class='link' data-link="complexo golgiense">complexo golgiense</span>. Nessas células são encontrados apenas <span class='link' data-link="ribossomo">ribossomos</span>, organelas relacionadas com o processo de síntese proteica. Apesar de ser uma organela presente em células <span class='link' data-link="eucariontes">eucariontes</span> e procariontes, nesses últimos, apresenta um menor tamanho.</p>`,
     add: ``,
   },
   {
     nome: 'Animais',
     titulo: 'Células Animais',
-    texto: `<p><p>As células animais são células eucarióticas as quais são encontradas nos animais (reino animalia)</p>
-    <p>As células animais apresentam uma estrutura organizada. Elas possuem três partes básicas: a membrana plasmática, o citoplasma e o núcleo</p></p>`,
+    texto: `<p><p>As células animais são <span class='link' data-link="eucariontes">células eucarióticas</span> as quais são encontradas nos animais (reino <em>animalia</em>).</p>
+    <p>As células animais apresentam uma estrutura organizada. Elas possuem três partes básicas: a membrana plasmática, o citoplasma e o núcleo.</p>`,
     add: ``,
   },
   {
     nome: 'Vegetais',
     titulo: 'Células Vegetais',
-    texto: `<p>As células vegetais formam os tecidos das plantas. São semelhantes às células animais, uma vez que possuem muitas organelas em comum, mas diferem delas por possuírem parede celular, cloroplastos e vacúolos, adequadas ao modo de vida das plantas</p>
+    texto: `<p>As células vegetais formam os tecidos das plantas. São semelhantes às <span class='link' data-link="animais">células animais</span>, uma vez que possuem muitas <span class='link' data-link="organelas">organelas</span> em comum, mas diferem delas por possuírem parede celular, <span class='link' data-link="cloroplasto">cloroplastos</span> e <span class='link' data-link="vacúolo">vacúolos</span>, adequadas ao modo de vida das plantas.</p>
     `,
     add: ``,
   },

@@ -152,7 +152,7 @@ main{
   border: 1em solid red;
   background: lightgray;
   position: relative;
-  margin-left: 5em;
+  margin-left: 3em;
 }
 
 .procarionte::before{
@@ -258,7 +258,7 @@ main{
 
 .plasmideo{
   border-radius: 50%;
-  border: 2px solid blue;
+  border: 2px solid #3f7ee2;
   width: 3em;
   height: 3em;
 }
@@ -271,7 +271,7 @@ main{
   left: 2px;
   right: 2px;
   bottom: 2px;
-  border: 2px solid blue;
+  border: 2px solid #377ae5;
 }
 
 .nucleo{
