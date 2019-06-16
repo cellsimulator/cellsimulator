@@ -341,7 +341,6 @@ main{
 }
 
 .division2 p, .displayInformation p{
-  text-indent: 1em;
   margin-bottom: 16px;
   margin-left: 0.5em;
   font-size: 1.2em;
@@ -353,7 +352,6 @@ main{
 
 .link{
   color: blue;
-  font-weight: bold;
 }
 
 .link:hover{
@@ -422,6 +420,7 @@ footer{
 .oculto{
   display: none;
 }
+
 
 @keyframes aparece{
   from{

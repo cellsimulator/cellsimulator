@@ -28,6 +28,58 @@ let textos = [
     add: ``,
   },
   {
+    nome: 'Citoplasma',
+    titulo: 'Citoplasma',
+    texto: `<p><strong>Porção gelatinosa que preenche o interior da célula</strong></p><p><strong>Localização:</strong></p><p><span class='link' data-link="procariontes">Células procarióticas</span>: representa todo o material que preenche o interior da célula;</p><p><span class='link' data-link="eucariontes">Células eucarióticas</span>: representa a porção localizada entre a membrana plasmática o núcleo.</p><p><strong>Componentes do citoplasma em células eucarióticas:</strong></p><p><span class='link' data-link="hialoplasma">Hialoplasma ou citosol</span>: água, íons e moléculas orgânicas;</p><p>Citoesqueleto: proteínas estruturais;</p><p><span class='link' data-link="Organelas">Orgânulos ou organelas</span>: estruturas com forma e função específicas;</p><p>Inclusões citoplasmáticas: gotículas e grãos de substâncias.</p>`,
+    add: ``,
+  },
+  {
+    nome: 'hialoplasma',
+    titulo: 'Hialoplasma',
+    texto: `<p><strong>Também conhecido como citozol, o hialoplasma é um líquido presente no interior das células dos seres vivos. É a parte solúvel do <span class='link' data-link="Citoplasma">citoplasma</span>.</strong></p><p><strong>Principais características:</strong></p>
+
+
+
+<p>- Nas áreas periféricas do citoplasma (<span class='link' data-link="ectoplasma">ectoplasma</span>), apresenta-se como uma matéria coloidal (espécie de gel viscoso). Já na parte interna (<span class='link' data-link="endoplasma">endoplasma</span>), o &#160;hialoplasma apresenta uma consistência mais fluída;</p>
+
+
+
+<p>- É composto por água, sais minerais, proteínas, açúcares e aminoácidos livres;</p>
+
+
+
+<p>- Corresponde a cerca de 50% do volume da célula;</p>
+
+
+
+<p><strong>Função:</strong></p>
+
+
+
+<p>- O hialoplasma (citosol) é responsável por grande parte das reações químicas do metabolismo celular. É no hialoplasma que ocorre a glicólise e a biossíntese de açúcares.</p>
+
+
+
+<p>- É no hialoplasma que ocorre a produção, através de reações químicas, de moléculas que formam as estruturas celulares.</p>
+
+
+
+<p>- É no hialoplasma que ocorre o armazenamento de substâncias de reserva usadas pelas células</p>`,
+    add: ``,
+  },
+  {
+    nome: 'ectoplasma',
+    titulo: 'Ectoplasma',
+    texto: `<p>O ectoplasma, também chamado ectoplasto, ectossarco e exoplasma, é a parte periférica do citoplasma, formada pelo líquido citoplasmático, de consistência gelatinosa. É espessa e hialina e está limitada exteriormente pela membrana plasmática.</p>`,
+    add: ``,
+  },
+  {
+    nome: 'endoplasma',
+    titulo: 'Endoplasma',
+    texto: `<p>O endoplasma é a parte interna do citoplasma que circula o núcleo de uma célula. Ele corresponde à parte líquida da matriz citoplasmática ou "citosol", que tem consistência mais fluida e que se localiza na parte mais direcionada ao centro do citoplasma.</p>`,
+    add: ``,
+  },
+  {
     nome: 'Organelas',
     titulo: 'Organelas Celulares',
     texto: `<p>Organelas são estruturas que ficam imersas no <span class='link' data-link="Citoplasma">citoplasma</span> celular, e são como pequenos órgãos que realizam funções essenciais para as células.</p><p>Existem <span class='link' data-link='membranosas'>organelas membranosas</span> e <span class='link' data-link='não membranosas'>organelas não membranosas</span>.</p>`,
@@ -146,12 +198,6 @@ let textos = [
     nome: 'vegetais',
     titulo: 'Células Vegetais',
     texto: `<p>vegetais aq</p>`,
-    add: ``,
-  },
-  {
-    nome: 'Citoplasma',
-    titulo: 'Citoplasma',
-    texto: `<p>É o citoplasma lá né</p>`,
     add: ``,
   },
 ]
