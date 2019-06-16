@@ -4,7 +4,7 @@ let main = document.querySelectorAll('main')
 let footer = document.querySelector('footer')
 let header = document.querySelector('header')
 let celula = document.querySelector('.celula')
-let fullscreen = document.querySelectorAll('.fullscreen')
+//let fullscreen = document.querySelectorAll('.fullscreen')
 
 let ct = ['eucariontes', 'procariontes', 'vegetais']
 
@@ -34,7 +34,7 @@ let textos = [
     add: ``,
   },
   {
-    nome: 'hialoplasma',
+    nome: 'Hialoplasma',
     titulo: 'Hialoplasma',
     texto: `<p><strong>Também conhecido como citozol, o hialoplasma é um líquido presente no interior das células dos seres vivos. É a parte solúvel do <span class='link' data-link="Citoplasma">citoplasma</span>.</strong></p><p><strong>Principais características:</strong></p>
 
@@ -68,13 +68,13 @@ let textos = [
     add: ``,
   },
   {
-    nome: 'ectoplasma',
+    nome: 'Ectoplasma',
     titulo: 'Ectoplasma',
     texto: `<p>O ectoplasma, também chamado ectoplasto, ectossarco e exoplasma, é a parte periférica do <span class='link' data-link='Citoplasma'>citoplasma</span>, formada pelo líquido citoplasmático, de consistência gelatinosa. É espessa e hialina e está limitada exteriormente pela membrana plasmática.</p>`,
     add: ``,
   },
   {
-    nome: 'endoplasma',
+    nome: 'Endoplasma',
     titulo: 'Endoplasma',
     texto: `<p>O endoplasma é a parte interna do <span class='link' data-link='Citoplasma'>citoplasma</span> que circula o núcleo de uma célula. Ele corresponde à parte líquida da matriz citoplasmática ou "citosol", que tem consistência mais fluida e que se localiza na parte mais direcionada ao centro do <span class='link' data-link='Citoplasma'>citoplasma</span>.</p>`,
     add: ``,
@@ -86,7 +86,7 @@ let textos = [
     add: `<img src='imgs/organelas_animal.jpg'><img src='imgs/organelas_vegetal.jpg'>`,
   },
   {
-    nome: 'não membranosas',
+    nome: 'Não membranosas',
     titulo: 'Organelas não membranosas',
     texto: `<p>Organelas não membranosas são aquelas que não apresentam envoltório algum em sua estrutura. Exemplos: <span class='link' data-link="ribossomo">ribossomo</span>, <span class='link' data-link="centrossomo">centrossomo</span>, <span class='link' data-link="citoesqueleto">citoesqueleto</span> e <span class='link' data-link="centríolo">centríolo</span>.</p>`,
     add: ``,
@@ -123,68 +123,68 @@ let textos = [
     add: ``,
   },
   {
-    nome: 'complexo golgiense',
+    nome: 'Complexo golgiense',
     titulo: 'Complexo golgiense',
     texto: `<p>O Complexo de Golgi, Aparelho de Golgi, ou ainda Complexo golgiense, é uma organela de <span class='link' data-link="eucarionte">células eucariontes</span>, composta de discos membranosos achatados e empilhados. Suas funções são modificar, armazenar e exportar proteínas sintetizadas no <span class='link' data-link="granuloso">retículo endoplasmático rugoso</span> e além disso, origina os <span class='link' data-link="lisossomo">lisossomos</span> e os acrossomos dos espermatozoides.</p><img src='imgs/golgi.jpg'><p>Na face cis da cisterna, as vesículas recebidas do <span class='link' data-link="granuloso">RER</span> contém proteínas (produzidas pelos <span class='link' data-link="ribossomo">ribossomos</span> associados ao retículo) que serão modificadas e dobradas. Algumas dessas proteínas são glicosiladas, ou seja, sofrem reação de adição de um açúcar no <span class='link' data-link="granuloso">RER</span>. Esse processo é completado no Complexo golgiense, caso contrário, essas proteínas podem se tornar inativas.</p><p>Na face trans, as proteínas são "empacotadas" em vesículas membranosas. Desse modo, são originadas muitas enzimas, bem como os <span class='link' data-link="lisossomo">lisossomos</span> primários e os <span class='link' data-link="peroxissomo">peroxissomos</span>.</p><p>Enquanto essas organelas ficam no <span class='link' data-link="Citoplasma">citoplasma</span> da célula, as proteínas são muitas vezes enviadas para fora dela.</p><p>Uma outra função do Complexo golgiense é a formação do acrossomo que se localiza na cabeça do espermatozoide. O acrossomo é o resultado da fusão de vários <span class='link' data-link="lisossomo">lisossomos</span> formando uma grande vesícula, que contem enzimas digestivas para auxiliar na perfuração da membrana do óvulo.</p>`,
     add: ``,
   },
   {
-    nome: 'lisossomo',
+    nome: 'Lisossomo',
     titulo: 'Lisossomo',
     texto: `<p>Os lisossomos são organelas membranosas presentes nas <span class='link' data-link="eucariontes">células eucariontes</span>, e são estruturas esféricas delimitadas por uma membrana formada por uma camada lipoproteica. Essas organelas contêm muitas enzimas que lhes permite degradar um grande número de substâncias. Como essas enzimas hidrolases funcionam em ambiente ácido, a digestão ocorre dentro dos lisossomos para não prejudicar a célula.</p><img src='imgs/lisossomo.jpg'><p>A função dos lisossomos é fazer a digestão intracelular, que pode ser por fagocitose ou autofagia.</p><p>Quando a célula precisa digerir substâncias vindas do meio externo, ela realiza a fagocitose. Por exemplo, no caso das células do sistema imunitário humano, que fagocitam microorganismos patógenos, chamados antígenos.</p><p>Quando as organelas se tornam envelhecidas, a célula passa por uma reciclagem e realiza o processo de autofagia, através do qual digere algumas das suas organelas que já não funcionam bem. Isso também pode acontecer em situações com poucos nutrientes, em que a célula realiza a autofagia para manter a homeostase (equilíbrio interno).</p>`,
     add: ``,
   },
   {
-    nome: 'peroxissomo',
+    nome: 'Peroxissomo',
     titulo: 'Peroxissomo',
     texto: `<p>Peroxissomos são organelas celulares encontradas nas <span class='link' data-link="vegetais">células vegetais</span> e <span class='link' data-link="animais">animais</span>. Em formato de vesículas arredondadas, eles estão presentes no <span class='link' data-link="Citoplasma">citoplasma</span> da célula.</p><p>Os peroxissomos exercem funções importantes no interior das células, uma vez que apresentam enzimas digestivas responsáveis por oxidar substâncias orgânicas.</p><img src='imgs/peroxissomo.jpg'><p>A principal função do peroxissomos é digerir algumas substâncias. Isso porque em seu interior estão armazenadas as enzimas oxidases. Essas enzimas oxidam os ácidos graxos para a síntese de colesterol. Também são usados como matéria-prima na respiração celular com o intuito de obter energia. Nas reações de oxidação é produzido o peróxido de hidrogênio (H<sub>2</sub>O<sub>2</sub>), e por isso essa organela recebe esse nome.</p><p>Os peroxissomos também contêm a enzima catalase, que degrada substâncias tóxicas para as células, como o peróxido de hidrogênio ("água oxigenada") produzido em certas reações.</p>`,
     add: ``,
   },
   {
-    nome: 'vacúolo',
+    nome: 'Vacúolo',
     titulo: 'Vacúolo',
     texto: `<p>O vacúolo da célula vegetal é resultado de diversas bolsas unidas, que têm origem no <span class='link' data-link="retículo endoplasmático">retículo endoplasmático</span> e no <span class='link' data-link="complexo golgiense">Complexo de Golgi</span>. Ele é preenchido por água e algumas partículas dissolvidas nela, e é envolvido por uma membrana. Apresenta diversas funções, como: regular o PH celular, controlar a entrada e saída de água por osmorregulação, armazenar substâncias e fornecer proteínas para sementes em processos de maturação.</p>`,
     add: `<img src='imgs/vacuolo.jpg'>`,
   },
   {
-    nome: 'cloroplasto',
+    nome: 'Cloroplasto',
     titulo: 'Cloroplasto',
     texto: `<p>Os cloroplastos são organelas presentes em <span class='link' data-link="vegetais">células vegetais</span>, nas regiões que ficam iluminadas. Possuem cor verde, devido à presença de clorofila, e são responsáveis pela realização da fotossíntese.</p><p>Geralmente, a forma do cloroplasto é arredondada e alongada, mas pode ter outros formatos. Possui membrana lipoproteica dupla, sendo que a mais interna das membranas forma lamelas, compostas por pilhas lamelares menores, cada uma como se fosse uma pequena bolsa achatada, chamada tilacoide. Os tilacoides são interligados e ficam empilhados.</p><p>A etapa clara (conversão da luz em energia) acontece na região das membranas dos tilacoides, onde está concentrada a clorofila. Entre as membranas dos tilacoides há um espaço preenchido por um fluido e enzimas, DNA, RNA e ribossomos, sendo denominado estroma. É no estroma que acontece a etapa escura, em que ocorre a produção dos açúcares (glicose).</p>`,
     add: `<img src='imgs/cloroplasto.jpg'>`,
   },
   {
-    nome: 'ribossomo',
+    nome: 'Ribossomo',
     titulo: 'Ribossomo',
-    texto: `<p>Ribossomos são organelas que participam da síntese proteica nas células. São formados por duas partes arredondadas, que se dispõem uma sobre a outra.</p><p>Os ribossomos são constituídos, basicamante, por proteínas e por RNA ribossômico (RNAr). Podem ser encontrados dispersos no <span class='link' data-link="Citoplasma">citoplasma</span> ou associados ao <span class='link' data-link="retículo endoplasmático granuloso">retículo endoplasmático granuloso</span>.</p>`,
+    texto: `<p>Ribossomos são organelas que participam da síntese proteica nas células. São formados por duas partes arredondadas, que se dispõem uma sobre a outra.</p><p>Os ribossomos são constituídos, basicamante, por proteínas e por RNA ribossômico (RNAr). Podem ser encontrados dispersos no <span class='link' data-link="Citoplasma">citoplasma</span> ou associados ao <span class='link' data-link="granuloso">retículo endoplasmático granuloso</span>.</p>`,
     add: `<img src='imgs/ribossomo.png'>`,
   },
   {
-    nome: 'centrossomo',
+    nome: 'Centrossomo',
     titulo: 'Centrossomo',
     texto: `<p>Centrossomo é o local de onde partem os microtúbulos do <span class='link' data-link="citoesqueleto">citoesqueleto</span>, e se encontra próximo ao núcleo. No seu interior se encontram os <span class='link' data-link="centríolos">centríolos</span>.</p><p>É uma estrutura essencial para a organização interna da célula, participando da manutenção do <span class='link' data-link="citoesqueleto">citoesqueleto</span> durante a migração celular, processo de deslocamento das células que está envolvido em diversos processos, como na defesa do organismo, na cicatrização e na modelagem óssea.</p>`,
     add: `<img src='imgs/centrossomo.jpg'>`,
   },
   {
-    nome: 'centríolo',
+    nome: 'Centríolo',
     titulo: 'Centríolo',
     texto: `<p>Os centríolos são organelas citoplasmáticas presentes em <span class='link' data-link="eucariontes">células eucarióticas</span>, com exceção das células de fungos e das <span class='link' data-link="células vegetais">células vegetais</span> de angiospermas e gimnospermas.</p><p>Os centríolos são formados por nove conjuntos de três microtúbulos cada, e não são revestidos por membrana. Participam principalmente do processo de divisão celular, formando o fuso acromático, um conjunto de microtúbulos dispostos nos polos das células que levam à separação dos cromossomos durante os processos de mitose e meiose.</p><p>Em alguns casos, como nos protozoários, os centríolos também auxiliam na formação de cílios e flagelos.</p>`,
     add: `<img src='imgs/centriolo.jpg'>`,
   },
   {
-    nome: 'citoesqueleto',
+    nome: 'Citoesqueleto',
     titulo: 'Citoesqueleto',
     texto: `<p>O citoesqueleto é uma rede complexa de fibras e filamentos, encontrado nas <span class='link' data-link="eucariontes">células eucariontes</span>.</p><p>O citoesqueleto permite à celula adotar diversos formatos e executar movimentos amebóides, além de ser importante para garantir sua forma e sustentação, promover movimentos de organelas e vesículas e na contração celular.</p>`,
     add: `<img src='imgs/citoesqueleto.jpg'>`,
   },
   {
-    nome: 'eucariontes',
+    nome: 'Eucariontes',
     titulo: 'Células Eucariontes',
     texto: `<p>As células eucariontes são aquelas que apresentam um núcleo delimitado por um envoltório nuclear. Nesse tipo celular, o material genético não está espalhado pelo citoplasma, como nas células procariontes, mas, sim, restritos à região do núcleo.</p>
     <p>As células eucariontes são mais complexas do que as células procariontes. Uma das principais características é a presença de um núcleo delimitado por envoltório nuclear, o qual protege as moléculas de DNA existentes nessa região. É no interior do núcleo que ocorre a duplicação do DNA e a síntese de RNA</p>`,
     add: ``,
   },
   {
-    nome: 'procariontes',
+    nome: 'Procariontes',
     titulo: 'Células Procariontes',
     texto: `<p>As células procariontes  podem ser definidas, como as células que não possuem material genético delimitado por um envoltório nuclear. Isso quer dizer que seu material genético está disperso no citoplasma</p>
     <p>A principal característica de uma célula procarionte é a ausência de um núcleo delimitado. Nessas células, observa-se apenas um local (nucleoide) contendo DNA circular (DNA cromossômico) não associado a proteínas histonas. Podem existir ainda pequenas moléculas de DNA livres no citoplasma, conhecidas como plasmídeos, que são capazes de se reproduzir independentemente do DNA cromossômico</p>
@@ -192,14 +192,14 @@ let textos = [
     add: ``,
   },
   {
-    nome: 'animais',
+    nome: 'Animais',
     titulo: 'Células Animais',
     texto: `<p><p>As células animais são células eucarióticas as quais são encontradas nos animais (reino animalia)</p>
     <p>As células animais apresentam uma estrutura organizada. Elas possuem três partes básicas: a membrana plasmática, o citoplasma e o núcleo</p></p>`,
     add: ``,
   },
   {
-    nome: 'vegetais',
+    nome: 'Vegetais',
     titulo: 'Células Vegetais',
     texto: `<p>As células vegetais formam os tecidos das plantas. São semelhantes às células animais, uma vez que possuem muitas organelas em comum, mas diferem delas por possuírem parede celular, cloroplastos e vacúolos, adequadas ao modo de vida das plantas</p>
     `,
@@ -213,7 +213,6 @@ for(let i = 0; i < main.length - 1; i++){
   mostraInformacao(ct[i], 1)
 }
 mainAtual = 0
-mudaMain(mainAtual)
 
 main[mainAtual].style.height = window.innerHeight - (header.offsetHeight + footer.offsetHeight) + 'px'
 
@@ -245,7 +244,7 @@ function mudaMain(x){
   }
 }
 
-function fullScreen(e){
+/*function fullScreen(e){
   let t = e.currentTarget
   if(t.src.substr(-24) == "imgs/enterfullscreen.png"){
     t.src = "imgs/exitfullscreen.png"
@@ -259,12 +258,12 @@ function fullScreen(e){
     header.style.display = ''
     footer.style.display = ''
   }
-}
+}*/
 
 function findNSelect(n){
   let i = 0;
   for(let i = 0; i < lis.length; i++) lis[i].classList.remove('selected')
-  for(;lis[i].innerHTML != n;i++);
+  for(;lis[i].innerHTML.toLowerCase() != n.toLowerCase();i++);
   let el = lis[i]
   el.classList.add('selected')
   while(el.parentNode.classList[0] != 'informations'){
@@ -275,14 +274,14 @@ function findNSelect(n){
 
 function find2(n){
   for(let i = 0; i < textos.length; i++){
-    if(textos[i].titulo == n) return i;
+    if(textos[i].titulo.toLowerCase() == n.toLowerCase()) return i;
   }
   return -1;
 }
 
 function find(n){
   for(let i = 0; i < textos.length; i++){
-    if(textos[i].nome == n) return i;
+    if(textos[i].nome.toLowerCase() == n.toLowerCase()) return i;
   }
   return -1;
 }
@@ -320,7 +319,7 @@ function hoverMessage(content){
 
 for(let i = 0; i < is.length; i++) is[i].addEventListener('click', (e) => mostraInformacao(e.currentTarget.innerHTML, 2))
 for(let i = 0; i < h2.length; i++) h2[i].addEventListener('click', (e) => e.currentTarget.nextSibling.nextSibling.classList.toggle('oculto'))
-for(let i = 0; i < fullscreen.length; i++) fullscreen[i].addEventListener('click', (e) => fullScreen(e));
+//for(let i = 0; i < fullscreen.length; i++) fullscreen[i].addEventListener('click', (e) => fullScreen(e));
 for(let i = 0; i < menuLis.length; i++) menuLis[i].addEventListener('click', () => mudaMain(i))
 for(let i = 0; i < iContainers.length; i++) iContainers[i].addEventListener('click', (e) => {if(e.currentTarget.nextSibling.nextSibling.classList[0] == 'oculto' || e.currentTarget.nextSibling.nextSibling.classList[0] != 'oculto' && e.currentTarget.classList[1] == 'selected') e.currentTarget.nextSibling.nextSibling.classList.toggle('oculto')})
 for(let i = 0; i < iContainers.length; i++) iContainers[i].addEventListener('click', (e) => {mostraInformacao(e.currentTarget.innerHTML, 2);})
@@ -329,3 +328,5 @@ for(let i = 0; i < os.length; i++){
   os[i].addEventListener('mouseout', () => hm.classList.add('oculto'))
   os[i].addEventListener('click', (e) => mostraInformacao(e.currentTarget.dataset.name, 1))
 }
+
+document.querySelector("#ano").innerHTML=(new Date()).getFullYear();
