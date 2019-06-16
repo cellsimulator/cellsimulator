@@ -1,6 +1,6 @@
 *{
   margin: 0;
-  font-family: "Maiagandra GD", sans-serif;
+  font-family: "Maiandra GD", sans-serif;
   transition: 0.3s ease;
   cursor: default;
 }
@@ -40,15 +40,22 @@ header > h1:hover{
   transform: scale(1.1);
 }
 
-.dropdown::before{
+.coiso{
+  position: absolute;
+  top:-1em;
+  left:0;
+  right:0;
+  z-index: -8;
+  padding: 0.5em;
+}
+.coiso>div{
   content: "";
   width: 2em;
   height: 2em;
-  z-index: -8;
   background-color: #fff;
   position: absolute;
   transform: rotateZ(45deg);
-  top: -0.5em;
+  top: 0.5em;
 }
 
 .dropdown{
@@ -209,7 +216,6 @@ main{
   position: relative;
   height: 100%;
   width: 25%;
-  max-width: 27%;
   border-right: 1px solid #000;
   background-color: #fff;
   overflow: auto;
@@ -219,7 +225,6 @@ main{
   position: relative;
   height: 100%;
   width: 75%;
-  min-width: 73%;
   padding: 1em;
   box-sizing: border-box;
   border-right: 1px solid #000;
@@ -231,7 +236,10 @@ main{
 .division2 h1, .displayInformation h1{
   font-size: 1.5em;
   box-shadow: 0px 3px 0px #000;
-  margin-bottom: 0.4em;
+  margin-bottom: 24px;
+}
+.division2 p{
+  margin-bottom: 16px;
 }
 
 .division2 h2{
