@@ -13,28 +13,47 @@
         <div class="dropdown">
           <div class="coiso"><div></div></div>
           <ul class='menuUl'>
-            <li>Célula Animal</li>
+            <li>Célula Eucarionte</li>
+            <li>Célula Procarionte</li>
             <li>Célula Vegetal</li>
             <li>Informações completas</li>
           </ul>
         </div>
       </div>
       <h1>Cell Simulator</h1>
-      <img src="imgs/chave.png" class='hoverable'>
+      <img src="imgs/chave.png" style='visibility: hidden;'>
     </header>
-    <!-- Célula animal -->
+    <!-- Célula eucarionte -->
     <main class='displayCelula'>
       <div class="celula">
-        <div class="citoplasma"></div>
+        <div class="organela citoplasma" data-name='Citoplasma'></div>
         <div class="nucleo"></div>
         <img src="imgs/mitocondria2.png" class='organela hoverable' data-name='mitocôndria' style='top: 50%; left: 30%; width: 2em;'>
-        <img src="imgs/ribossomo2.png" class='organela hoverable' data-name='ribossomo' style='top: 20%; left: 60%; width: 0.5em;'>
-        <img src="imgs/centriolo2.png" class='organela hoverable' data-name='centríolo' style='top: 20%; left: 70%; width: 2em;'>
+        <img src="imgs/ribossomo2.png" class='organela hoverable' data-name='ribossomo' style='top: 20%; left: 30%; width: 0.5em;'>
+        <div class="organela centrossomo hoverable" data-name='centrossomo' style='top: 80%; left: 49%;'></div>
+        <img src="imgs/centriolo2.png" class='organela hoverable' data-name='centríolo' style='top: 80%; left: 50%; width: 2em;'>
         <img src="imgs/lisossomo2.png" class='organela hoverable' data-name='lisossomo' style='top: 50%; left: 10%; width: 2em;'>
         <img src="imgs/peroxissomo2.png" class='organela hoverable' data-name='peroxissomo' style='top: 60%; left: 10%; width: 2em;'>
-        <img src="imgs/liso2.png" class='organela hoverable' data-name='liso' style='top: 29%; left: 44%; width: 7em;'>
-        <img src="imgs/granuloso2.png" class='organela hoverable' data-name='granuloso' style='top: 37%; left: 66%; width: 4em;'>
-        <img src="imgs/golgi2.png" class='organela hoverable' data-name='complexo golgiense' style='top: 62%; left: 47%; width: 10em;'>
+        <img src="imgs/liso2.png" class='organela hoverable' data-name='liso' style='top: 39%; left: 57%; width: 7em; z-index: 0;'>
+        <img src="imgs/granuloso2.png" class='organela hoverable' data-name='granuloso' style='top: 37%; left: 46%; width: 6em;'>
+        <img src="imgs/golgi2.png" class='organela hoverable' data-name='complexo golgiense' style='top: 51%; left: 44%; width: 13em;'>
+      </div>
+      <div class='displayInformation'>
+        <h1>Selecione uma organela</h1>
+      </div>
+      <img src="imgs/enterfullscreen.png" class='fullscreen hoverable'>
+    </main>
+    <!-- Célula procarionte -->
+    <main class='displayCelula'>
+      <div class="procarionte">
+        <div class="organela citoplasma" data-name='Citoplasma'></div>
+        <div class="organela plasmideo" data-name='Citoplasma' style='top: 20%; left: 30%;'></div>
+        <div class="organela plasmideo" data-name='Citoplasma' style='top: 10%; left: 90%;'></div>
+        <div class="organela plasmideo" data-name='Citoplasma' style='top: 80%; left: 20%;'></div>
+        <img src="imgs/ribossomo2.png" class='organela hoverable' data-name='ribossomo' style='top: 20%; left: 70%; width: 1em;'>
+        <img src="imgs/ribossomo2.png" class='organela hoverable' data-name='ribossomo' style='top: 30%; left: 10%; width: 1em;'>
+        <img src="imgs/ribossomo2.png" class='organela hoverable' data-name='ribossomo' style='top: 25%; left: 90%; width: 1em;'>
+        <img src="imgs/material_genetico.png" class='organela' data-name='Citoplasma' style='top: 41%; left: 40%; width: 25em; z-index: 0;'>
       </div>
       <div class='displayInformation'>
         <h1>Selecione uma organela</h1>
@@ -42,9 +61,22 @@
       <img src="imgs/enterfullscreen.png" class='fullscreen hoverable'>
     </main>
     <!-- Célula Vegetal -->
-    <main class='oculto'>
-      <div class="celula">
-        <img src="imgs/mitocondria2.png" class='organela hoverable' data-type=0>
+    <main class='oculto displayCelula'>
+      <div class="vegetal">
+        <div class="organela citoplasma" data-name='Citoplasma'></div>
+        <div class="organela vacuolo hoverable" data-name='vacúolo' style='top: 7%; left: 7%;'></div>
+        <div class="nucleo" style='top: 20%; left: 70%;'></div>
+        <img src="imgs/mitocondria2.png" class='organela hoverable' data-name='mitocôndria' style='top: 50%; left: 30%; width: 2em;'>
+        <img src="imgs/ribossomo2.png" class='organela hoverable' data-name='ribossomo' style='top: 80%; left: 60%; width: 0.5em;'>
+        <img src="imgs/lisossomo2.png" class='organela hoverable' data-name='lisossomo' style='top: 70%; left: 10%; width: 2em;'>
+        <img src="imgs/peroxissomo2.png" class='organela hoverable' data-name='peroxissomo' style='top: 60%; left: 10%; width: 2em;'>
+        <img src="imgs/liso2.png" class='organela hoverable' data-name='liso' style='top: 42%; left: 76%; width: 7em;'>
+        <img src="imgs/granuloso2.png" class='organela hoverable' data-name='granuloso' style='top: 40%; left: 66%; width: 6em;'>
+        <img src="imgs/golgi2.png" class='organela hoverable' data-name='complexo golgiense' style='top: 60%; left: 65%; width: 12em;'>
+        <img src="imgs/cloroplasto2.png" class='organela hoverable' data-name='cloroplasto' style='top: 90%; left: 40%; width: 2em;'>
+      </div>
+      <div class='displayInformation'>
+        <h1>Selecione uma organela</h1>
       </div>
       <img src="imgs/enterfullscreen.png" class='fullscreen hoverable'>
     </main>
