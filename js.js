@@ -195,7 +195,7 @@ let textos = [
     nome: 'Animais',
     titulo: 'Células Animais',
     texto: `<p><p>As células animais são <span class='link' data-link="eucariontes">células eucarióticas</span> as quais são encontradas nos animais (reino <em>animalia</em>).</p>
-    <p>As células animais apresentam uma estrutura organizada. Elas possuem três partes básicas: a membrana plasmática, o citoplasma e o núcleo.</p>`,
+    <p>As células animais apresentam uma estrutura organizada. Elas possuem três partes básicas: a membrana plasmática, o <span class='link' data-link="Citoplasma">citoplasma</span> e o núcleo.</p>`,
     add: ``,
   },
   {
