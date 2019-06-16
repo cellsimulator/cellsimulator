@@ -30,7 +30,7 @@ let textos = [
   {
     nome: 'Citoplasma',
     titulo: 'Citoplasma',
-    texto: `<p><strong>Porção gelatinosa que preenche o interior da célula</strong></p><p><strong>Localização:</strong></p><p><span class='link' data-link="procariontes">Células procarióticas</span>: representa todo o material que preenche o interior da célula;</p><p><span class='link' data-link="eucariontes">Células eucarióticas</span>: representa a porção localizada entre a membrana plasmática o núcleo.</p><p><strong>Componentes do citoplasma em células eucarióticas:</strong></p><p><span class='link' data-link="hialoplasma">Hialoplasma ou citosol</span>: água, íons e moléculas orgânicas;</p><p>Citoesqueleto: proteínas estruturais;</p><p><span class='link' data-link="Organelas">Orgânulos ou organelas</span>: estruturas com forma e função específicas;</p><p>Inclusões citoplasmáticas: gotículas e grãos de substâncias.</p>`,
+    texto: `<p><strong>Porção gelatinosa que preenche o interior da célula</strong></p><p><strong>Localização:</strong></p><p><span class='link' data-link="procariontes">Células procarióticas</span>: representa todo o material que preenche o interior da célula;</p><p><span class='link' data-link="eucariontes">Células eucarióticas</span>: representa a porção localizada entre a membrana plasmática e o núcleo.</p><p><strong>Componentes do citoplasma em células eucarióticas:</strong></p><p><span class='link' data-link="hialoplasma">Hialoplasma ou citosol</span>: água, íons e moléculas orgânicas;</p><p><span class='link' data-link='citoesqueleto'>Citoesqueleto</span>: proteínas estruturais;</p><p><span class='link' data-link="Organelas">Orgânulos ou organelas</span>: estruturas com forma e função específicas;</p><p>Inclusões citoplasmáticas: gotículas e grãos de substâncias.</p>`,
     add: ``,
   },
   {
@@ -70,13 +70,13 @@ let textos = [
   {
     nome: 'ectoplasma',
     titulo: 'Ectoplasma',
-    texto: `<p>O ectoplasma, também chamado ectoplasto, ectossarco e exoplasma, é a parte periférica do citoplasma, formada pelo líquido citoplasmático, de consistência gelatinosa. É espessa e hialina e está limitada exteriormente pela membrana plasmática.</p>`,
+    texto: `<p>O ectoplasma, também chamado ectoplasto, ectossarco e exoplasma, é a parte periférica do <span class='link' data-link='Citoplasma'>citoplasma</span>, formada pelo líquido citoplasmático, de consistência gelatinosa. É espessa e hialina e está limitada exteriormente pela membrana plasmática.</p>`,
     add: ``,
   },
   {
     nome: 'endoplasma',
     titulo: 'Endoplasma',
-    texto: `<p>O endoplasma é a parte interna do citoplasma que circula o núcleo de uma célula. Ele corresponde à parte líquida da matriz citoplasmática ou "citosol", que tem consistência mais fluida e que se localiza na parte mais direcionada ao centro do citoplasma.</p>`,
+    texto: `<p>O endoplasma é a parte interna do <span class='link' data-link='Citoplasma'>citoplasma</span> que circula o núcleo de uma célula. Ele corresponde à parte líquida da matriz citoplasmática ou "citosol", que tem consistência mais fluida e que se localiza na parte mais direcionada ao centro do <span class='link' data-link='Citoplasma'>citoplasma</span>.</p>`,
     add: ``,
   },
   {

@@ -341,6 +341,7 @@ main{
 }
 
 .division2 p, .displayInformation p{
+  text-indent: 1em;
   margin-bottom: 16px;
   margin-left: 0.5em;
   font-size: 1.2em;
