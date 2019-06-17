@@ -142,7 +142,7 @@ main{
   border: 1px solid red;
   background: lightgray;
   position: relative;
-  margin-left: 5em;
+  margin: 0 auto;
 }
 
 .procarionte{
@@ -152,7 +152,7 @@ main{
   border: 1em solid red;
   background: lightgray;
   position: relative;
-  margin-left: 3em;
+  margin: 0 auto;
 }
 
 .procarionte::before{
@@ -178,7 +178,7 @@ main{
   border: 1.4em solid green;
   background: lightgray;
   position: relative;
-  margin-left: 5em;
+  margin: 0 auto;
 }
 
 .vegetal::before{
